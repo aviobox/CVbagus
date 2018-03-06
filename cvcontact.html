@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/2000px-Ikea_logo.svg.png" itemprop="image">
+<link href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/2000px-Ikea_logo.svg.png" rel="shortcut icon">
+<title>CV-Contact</title>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.background{
+    background-color: rgba(red, green, rgba(199, 97, 2, 0.631), alpha);
+    background-size: 1020px, 860px;
+}
+
+.sidenav {
+    height: 40cm;
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url(white.jpg);  
+        }           
+
+div {
+            background-color :rgb(rgb(255, 255, 255), green, blue);
+            position: right;
+            background-position:right;
+         
+    }
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #413f3f;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #050505;
+}
+
+.main {
+    margin-left: 180px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: rgb(216, 216, 216);
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #ffffff;
+    padding-left: 8px;
+}
+
+.pic{
+   
+    height: 5px;
+    width: 2px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+h1{
+           font-family: "Lato", sans-serif;
+           font-style:normal;
+           text-transform:uppercase;
+           text-decoration:yellow;
+           text-shadow: yellow;
+           line-height: 50%;
+           letter-spacing: 2px;
+           word-spacing: 4px;
+           text-align: center;
+           text-indent: 2rem;
+       }
+
+       body{
+     color: white;
+     text-align: center;
+ }
+ #content{
+     max-width: 960px;
+     margin: 0 auto; 
+ }
+#content div{
+    background: rgba(19, 19, 19, 0.782);
+    height: 3cm;
+    padding: 30px;
+}
+#content div:nth-child(even){
+    background: rgba(19, 19, 19, 0.782);
+}
+#content{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-auto-rows: 15cm 15cm 15cm 15cm;
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    max-width: 960px;
+    margin: center;
+}
+
+#kotak1{
+    float: left;
+    position: absolute;
+}
+
+</style>
+</head>
+<body background="dark.jpg">
+
+<div class="sidenav">
+  <li><left><img src="sidelogo.png" height="40px"></left></li>
+  <a href="file:///D:/html/IKEH/cvtentangsaya.html">About Me</a>
+  <a href="file:///D:/html/IKEH/cvcontact.html">Contact</a>
+  <button class="dropdown-btn">
+    <i class="fa fa-caret-down"></i>Prestasi Dan Akademik
+  </button>
+  <div class="dropdown-container">
+    <a href="file:///D:/html/IKEH/cvsekolah.html">Sekolah</a>
+    <a href="http://www.404errorpages.com">Prestasi Non Akademik</a>
+    <a href="http://www.404errorpages.com">Prestasi Akademik</a>
+  </div>
+</div>
+
+<div class="main">
+  <h1><img src="sidelogo.png" height="100px"></h1>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+
+<div id="content">
+    <div class="kotak1"><a href="http://www.facebook.com"><img src="facebook.png"  height="100px"></a>
+        <h6>Facebook</h6>
+</div>
+    <div class="kotak1"><a href="http://www.twitter.com"><img src="twitter.png"  height="100px"></a>
+    <h6>Twitter</h6>
+</div>
+    <div class="kotak1"><a href="https://www.google.com/gmail/"><img src="gmail.png"  height="100px"></a>
+    <h6>GMail</h6>
+</div>
+    <div class="kotak1"><a href="https://www.instagram.com"><img src="ig.png"  height="100px"></a>
+    <h6>Instagram</h6>
+</div>
+    
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+</body>
+</html> 
